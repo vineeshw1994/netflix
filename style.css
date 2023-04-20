@@ -1,0 +1,268 @@
+*{
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+#navlogo{
+    height: 40px;
+    width: 130px;
+}
+#navbar{
+   width: 100%;
+   background-color: rgb(0,9,28);
+}
+#btn{
+    padding: 4px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+
+}
+.language{
+    width:150px;
+    height: 38px;
+    border-radius: 5px;
+}
+ @media only screen and (max-width: 600px) {
+       #content {
+          display: none;
+        }
+    }
+
+.dropdown-menu{
+  
+}
+.dropdown-item{
+    background-color: white;
+}
+#drop-down:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+
+/*---------main------------*/
+
+main{
+    background-color: rgb(0,9,28); 
+}
+#main-bg{
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    background-image: linear-gradient(65.68deg, rgba(0, 8, 29, 0.6) 9.51%, rgba(53, 13, 49, 0.6) 72.89%, rgba(132, 5, 25, 0.6) 101.01%),linear-gradient(102.21deg, rgba(0, 0, 0, 0.04) 16.09%, rgba(1, 1, 1, 0.17) 39.27%, rgba(1, 1, 1, 0.24) 64.25%, rgba(4, 4, 4, 0.8) 96.63%),url(images/main\ image.jpg);
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);  
+    margin-top: 40px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.header-content p{
+    font-size: 18px;
+}
+.email-signup input{
+    background: rgb(36, 36, 37);
+    border: 1px solid rgb(163, 162, 162);
+    outline: 0;
+    padding: 14px;
+    padding-right: 40px;
+    border-radius: 4px;
+    margin: 5px 5px 0 0;
+}
+.email-signup button{
+    background: rgb(229,8,21);
+    outline: 0;
+    border:0;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 4px;
+    margin: 5px 5px 0 0;
+
+}
+
+
+
+/********body sections********/
+#first-section{
+    background-color:rgb(0,9,28);
+}
+#left{
+    padding-top: 15%;
+    padding-left: 20px;
+}
+#first-image{
+    height: 360px;
+    width: 300px;
+}
+#left h2{
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 10px;   
+}
+#left p{
+    font-size: 15px;
+    
+}
+
+/********border ************/
+
+.border-line{
+    height: 8px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: rgb(56, 54, 54);
+}
+
+/**********second section**********/
+#second-section{
+    background-color:rgb(0,9,28);
+}
+
+#sec-section-right{
+    padding-top: 11%;
+}
+#second-img{
+    height: 350px;
+    width: 330px;
+}
+#sec-section-right h2{
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 10px; 
+}
+
+/***********third section*********/
+
+#third-section{
+    background-color:rgb(0,9,28); 
+}
+#third-section-right{
+    padding-top: 15%;
+    margin-left: 30px;
+}
+#third-image{
+    height: 350px;
+    width: 300px;
+}
+#third-section-right h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px; 
+}
+
+/*********fourth ************/
+#fourth-section{
+    background-color:rgb(0,9,28); 
+}
+#fourth-right{
+    padding-top: 15%;
+}
+#fourth-image{
+    height: 350px;
+    width: 300px;
+}
+#fourth-section h2{
+    font-weight: 700;
+}
+
+/*************section faq**********/
+#faq{
+    background-color:rgb(0,9,28);
+}
+#faqs{
+    padding: 25px 12%;
+    font-size: 18px;
+}
+#faqs h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:rgb(35,51,99);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .faq-content{
+    background:rgb(35,51,99);
+    text-align: left;
+    padding: 0 20px;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .faq-content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+/***********footer section********/
+#footer-container{
+    background-color:rgb(0,9,28);
+    color: rgb(209, 205, 205);
+    padding-top: 15%;
+}
+#footer-container ul li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+#footer-container ul li a{
+    color: rgb(209, 205, 205);
+    font-size: 14px;
+}
+.dropdown{
+    color: white;
+    padding-top: 10px;
+    margin-left: 25px;
+}
